@@ -1,3 +1,5 @@
+package com.something
+
 enum class Color {
     RED,
     ORANGE,
