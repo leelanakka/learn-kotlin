@@ -9,8 +9,8 @@ fun main() {
     val oldest = persons.maxBy { some -> some.age ?: 0 }
     println("The oldest is : $oldest")
     println("large number is : ${max(2, 3)}")
-    val sapana = Person("Sapana", 20)
-    println(sapana.age)
+    val women = Person("women", 20)
+    println(women.age)
     println(printBoard())
     val rectangle = Rectangle(41, 43)
     println(rectangle.isSquare)
@@ -30,7 +30,7 @@ class Rectangle(private val height: Int, private val width: Int) {
 
 fun getDifferentColor(color: Color): String =
     when (color) {
-        RED -> "Richard"
+        Color.RED -> "Richard"
         ORANGE -> "something"
         else -> "nothing"
     }
