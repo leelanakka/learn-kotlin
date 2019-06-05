@@ -13,15 +13,12 @@ fun main() {
     println(rectangle.isRectangle)
 }
 
-fun max(a:Int,b:Int) :Int = if (a>b) a else b
+fun max(a: Int, b: Int): Int = if (a > b) a else b
 
-class Rectangle (private val height:Int, private val width:Int) {
-    val isSquare:Boolean
-    get() {
-        return height == width
-    }
-    val isRectangle:Boolean
-    get() {
-        return height != width
-    }
+class Rectangle(private val height: Int, private val width: Int) {
+    val isSquare: Boolean
+        get() = height == width
+
+    val isRectangle: Boolean
+        get() = height != width
 }
