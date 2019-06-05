@@ -7,7 +7,4 @@ fun main() {
     println("large number is : ${max(2,3)}")
 }
 
-fun max(a:Int,b:Int) :Int{
-    if (a>b) return a
-    return b
-}
+fun max(a:Int,b:Int) :Int = if (a>b) a else b
