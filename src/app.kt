@@ -1,3 +1,7 @@
+import java.awt.Color
+import java.awt.Color.ORANGE
+import java.awt.Color.RED
+
 data class Person(val name: String, val age: Int? = null)
 
 fun main() {
@@ -11,6 +15,7 @@ fun main() {
     val rectangle = Rectangle(41, 43)
     println(rectangle.isSquare)
     println(rectangle.isRectangle)
+    println(getDifferentColor(RED))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -22,3 +27,10 @@ class Rectangle(private val height: Int, private val width: Int) {
     val isRectangle: Boolean
         get() = height != width
 }
+
+fun getDifferentColor(color: Color): String =
+    when (color) {
+        RED -> "Richard"
+        ORANGE -> "something"
+        else -> "nothing"
+    }
