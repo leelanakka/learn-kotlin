@@ -1,6 +1,11 @@
+# Ignore Gradle project-specific cache directory
 .gradle
-.idea
-out
+
+# Ignore Gradle build output directory
 build
-gradle.properties
-target
+.idea/
+gradle/
+gradlew.bat
+
+out/
+settings.gradle

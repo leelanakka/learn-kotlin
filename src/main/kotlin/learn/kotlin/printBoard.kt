@@ -1,3 +1,5 @@
+package learn.kotlin
+
 fun printBoard():String{
     var board = "|"
     for (i in 0..3) {

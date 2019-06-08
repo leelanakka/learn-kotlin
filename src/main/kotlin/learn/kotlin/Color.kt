@@ -1,4 +1,4 @@
-package com.something
+package learn.kotlin
 
 enum class Color {
     RED,
