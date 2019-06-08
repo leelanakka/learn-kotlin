@@ -5,8 +5,8 @@ open class FibonacciSeries(val number: Int) {
     fun fibonacciSeries(): Array<Int> {
         var firstNumber = 0
         var secondNumber = 1
-        val fibonacciNumbers = Array(number+1) { 0 }
-        for (i in 0..number) {
+        val fibonacciNumbers = Array(number) { 0 }
+        for (i in 0 until number) {
             println("$firstNumber")
 
             fibonacciNumbers.set(i, firstNumber)
